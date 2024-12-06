@@ -3,6 +3,7 @@ let amt;
 const switchButton = document.querySelector('.switch');
 const result = document.querySelector('.result');
 loadCurrencies();
+const API_KEY; //input your api key (can be generated for free from exchange rate api
 
 
 
@@ -22,7 +23,7 @@ form.addEventListener('submit', async function(e){
 })
 
 async function getExchangeRate(amt,from,to){
-  let url = `https://v6.exchangerate-api.com/v6/539ced6aeec58776c081a576/pair/${from}/${to}/${amt}`;
+  let url = `https://v6.exchangerate-api.com/v6/API_KEY/pair/${from}/${to}/${amt}`;
   let response = await fetch(url);
   let data = await response.json();
   return data.conversion_result.toFixed(2);
@@ -30,7 +31,7 @@ async function getExchangeRate(amt,from,to){
 }
 
 async function loadCurrencies(){
-  let url = `https://v6.exchangerate-api.com/v6/539ced6aeec58776c081a576/latest/USD`;
+  let url = `https://v6.exchangerate-api.com/v6/API_KEY/latest/USD`;
   let response = await fetch(url);
   let data = await response.json();
   const keys = Object.keys(data.conversion_rates);
