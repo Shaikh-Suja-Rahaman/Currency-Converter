@@ -1,0 +1,113 @@
+
+body{
+    margin: 0px;
+}
+h2{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+
+    /* height: 90vh; */
+    display: flex;
+    height: 100vh;
+    /* background-color: #4CAF50; */
+    justify-content: center;
+    align-items: center;
+    background-color: #f1ecec;
+
+}
+.heading{
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    background-color: #cbbeef;
+    border-radius: 20px;
+    padding: 1px;
+    /* margin-bottom: 20px; */
+    /* padding: 30px; */
+    height: auto;
+    width: 500px;
+     /* Adds space between the sections */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.5);}
+
+
+.form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+
+
+.input {
+    padding: 8px;
+    margin: 5px 0;
+
+}
+
+
+.input:focus{
+    outline: none;
+    box-shadow: #4CAF50 20px solid;
+}
+select{
+    width: 400px;
+    height: 30px;
+    transition: ease-in 0.1s;
+}
+select:focus{
+    outline: none;
+}
+select:hover{
+    cursor: pointer;
+}
+
+
+button {
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #905fa5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+    display: inline;
+    
+}
+.buttons{
+    
+    display: flex;
+    justify-content: space-between; /* Optional, if you want some space between the buttons */
+    width: 100%; /* To ensure the buttons take the full width */
+
+}
+.submitButton{
+    
+    flex-grow: 0.7;
+    
+}
+.switchButton{
+    
+    flex-grow: 0.3;
+}
+.hide{
+    display: none;
+}
+.result{
+    margin-top: -50px;
+    /* margin-top: 20px; */
+}
+button:hover {
+    background-color: #7b308a;
+}
